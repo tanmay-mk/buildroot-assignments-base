@@ -1,7 +1,7 @@
-# buildroot-hw-rpi-opencv-br-2020.02
+# Facial Recognition Application on Buildroot
 
 ## Project Description
-This is an example buildroot project for OpenCV 3 on hardware platform Raspberry Pi 4.
+This is an example buildroot project for facial recognition using OpenCV 3 on hardware platform Raspberry Pi 3B+, 4.
 <br/>
 
 ## How to use it
@@ -10,18 +10,18 @@ This is an example buildroot project for OpenCV 3 on hardware platform Raspberry
 <br/>
 
 **Hardware Requirement:**<br/>
-1. Raspberry Pi 4 (you can try other platform)
+1. Raspberry Pi 3B+, 4 (you can try other platform)
 2. Keyboard
-3. UVC camera (I used Logitech C270 webcam)
+3. UVC camera (Works with Logitech C200/C270 webcam)
 4. Display(Optional, you can view image directly on Raspberry Pi this way)<
 <br/>
 
 **Build Platform**<br/>
 Ubuntu 18.04(tested)<br/>
-Ubuntu 16.04(haven't tested yet)<br/>
+Ubuntu 20.04(tested)<br/>
 <br/>
 **Target Platform**<br/>
 Raspberry Pi 4 B (tested)<br/>
-Raspberry Pi 3 B (haven't tested yet)<br/>
+Raspberry Pi 3 B+ (tested)<br/>
 <br/>
 
