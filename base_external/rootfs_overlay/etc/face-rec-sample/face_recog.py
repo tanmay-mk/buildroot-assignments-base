@@ -25,19 +25,24 @@ import os,time
 file = 'image.jpg'
 
 # load the picture whose face has to be recognised.
-your_name_image = face_recognition.load_image_file("/etc/face-rec-sample/photos/tanmay.jpg")	#make changes here
-your_face_encoding = face_recognition.face_encodings(your_name_image)[0]				#make changes here
+elon_image = face_recognition.load_image_file("/etc/face-rec-sample/photos/elon.jpg")	#make changes here
+elon_face_encoding = face_recognition.face_encodings(elon_image)[0]				#make changes here
+
+bill_image = face_recognition.load_image_file("/etc/face-rec-sample/photos/bill.jpg")	#make changes here
+bill_face_encoding = face_recognition.face_encodings(elon_image)[0]				#make changes here
 	
 # start your webcam
 video_capture = cv2.VideoCapture(0)
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    your_face_encoding,		#make changes here
+    elon_face_encoding,
+    bill_face_encoding
     ]
     
 known_face_names = [
-    "Tanmay Kothale",		#make changes here
+    "Elon Musk",
+    "Bill Gates"
     ]
 
 # Initialize some variables
@@ -77,12 +82,9 @@ while True:
             #if face encodings are matched with a known face, determine the face and store their name to a file
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
-                
                 face_names.append(name)
                 print(name)
 
-
-    process_this_frame = not process_this_frame	#to process a new frame
     
 video_capture.release()
 cv2.destroyAllWindows()
