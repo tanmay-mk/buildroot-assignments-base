@@ -1,1 +1,9 @@
 source "$BR2_EXTERNAL_project_base_PATH/package/aesd-cam/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/distro/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/dlib/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/pyparsing/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/python-face-recognition/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/python-face-recognition-models/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/python-scikit-build/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/wheel/Config.in"
+
